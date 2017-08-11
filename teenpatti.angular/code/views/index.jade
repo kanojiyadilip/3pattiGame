@@ -1,0 +1,37 @@
+extends layout
+
+block content
+    div.start-up
+        div.header
+            span.logo.logo-default
+        div.panel-body
+            div(ng-controller='startUp')
+                div#register.container.main-container
+                    form.form
+                        div.form-group
+                            div.row
+                                div.col-sm-12.col-xs-12
+                                    div.col-sm-8.col-xs-9(align="center")
+                                        div.input-group
+                                            span.input-group-btn
+                                                button.btn.btn-default
+                                                    span.icon.icon-user
+                                            input.form-control(placeholder='Enter Name as guest player',ng-model='userName' )
+                                    div
+                                        button.col-sm-2.col-xs-3.join(ng-click='register()',class='btn btn-success')
+                                            div.text-cont
+                                                span.icon.icon-join
+                                                span.text Join
+                        span(id='message')
+                             h4(align="center" style="color:white") Don't have an account ?
+                                a(href="/signup" )  Register Now
+                                h4(style="color:white" align="center") Login with
+                                       div.col-sm-12.col-xs-12.button(style="margin-top: 12px;")
+                                           div.col-sm-6(align="center" style="margin: 0 auto;")
+                                               a(href='https://en-gb.facebook.com/login')   
+                                                 img(src='/images/rsz_button.png' style="height:60px; width:290px;")
+                                            div.col-sm-6(align="center" style="margin: 0 auto;")
+                                               a(href='https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin')   
+                                                 img(src='/images/rsz_1button1.png' style=" margin-top:5px; height:55px; width:290px;")
+
+

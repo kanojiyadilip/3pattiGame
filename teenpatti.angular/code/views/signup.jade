@@ -1,0 +1,50 @@
+head
+  // Latest compiled and minified CSS
+  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+  // jQuery library
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+  // Latest compiled JavaScript
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+body(style=" background: url('/images/4.jpg'); background-size: cover;")
+  .container(style="margin-top:150px;")
+    .row
+      h2
+      form.form-horizontal
+        fieldset
+          // Form Name
+          legend Register Here
+          // Text input
+          .form-group
+            label.col-md-4.control-label(for='textinput') First Name
+            .col-md-4
+              input#textinput.form-control.input-md(name='textinput', placeholder='Insert your First Name', required='', type='text')
+              span.help-block  
+          // Text input
+          .form-group
+            label.col-md-4.control-label(for='textinput') Last Name
+            .col-md-4
+              input#textinput.form-control.input-md(name='textinput', placeholder='Insert your Last Name', required='', type='text')
+              span.help-block  
+          // Text input
+          .form-group
+            label.col-md-4.control-label(for='textinput') Email
+            .col-md-4
+              input#textinput.form-control.input-md(name='textinput', placeholder='Insert your Email', required='', type='text')
+              span.help-block  
+          // Text input
+          .form-group
+            label.col-md-4.control-label(for='textinput') Password
+            .col-md-4
+              input#textinput.form-control.input-md(name='textinput', placeholder='Insert your Password', required='', type='text')
+              span.help-block  
+          // Text input
+          .form-group
+            label.col-md-4.control-label(for='textinput') Confirm Password
+            .col-md-4
+              input#textinput.form-control.input-md(name='textinput', placeholder='Confirm your Password', required='', type='text')
+              span.help-block  
+          // Button
+          .form-group
+            label.col-md-4.control-label(for='singlebutton')  
+            .col-md-4
+              button#singlebutton.bt
